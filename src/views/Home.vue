@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>开发中<br/><router-link :to='{name:"ManageBookSource"}'>书源管理</router-link></h1>
   </div>
 </template>
 
