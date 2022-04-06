@@ -5,7 +5,7 @@
         <a class="mdui-btn mdui-btn-icon" @click="$router.back()">
           <i class="mdui-icon material-icons">arrow_back</i>
         </a>
-        <a href="javascript:;" class="mdui-typo-title">{{ title }}</a>
+        <a href="javascript:;" class="mdui-typo-title">{{ $route.meta.title }}</a>
         <div class="mdui-toolbar-spacer"></div>
         <div class="mdui-textfield mdui-textfield-expandable mdui-float-right">
           <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
@@ -56,7 +56,6 @@
 
 <script>
 import mdui from "mdui";
-const title = "书源管理"
 export default {
   name: "ManageBookSource",
   data() {
@@ -65,9 +64,6 @@ export default {
       showType:0,
       search_text:"",
     }
-  },
-  beforeRouteEnter(){
-    window.document.title = title
   },
   methods: {
     doSearch(){
