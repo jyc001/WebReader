@@ -66,8 +66,7 @@ export default {
       search_text:"",
     }
   },
-
-  mounted() {
+  beforeRouteEnter(){
     window.document.title = title
   },
   methods: {
